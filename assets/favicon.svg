@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="8 8 84 84">
+<title>Framed Worlds — icon</title>
+<rect x="8" y="8" width="84" height="84" rx="14" fill="#0F1424"/>
+<path id="light" d="M48 38.639 L52 38.639 L52 70 L58.875 81 L41.125 81 L48 70 Z" fill="#FFEFBF" fill-rule="evenodd"/>
+<path id="door_left" d="M35.5 82 L35.5 53 A14.5 14.5 0 0 1 48 38.639 L48 70 L40.5 82 Z" fill="#6E5126"/>
+<path id="door_right" d="M64.5 82 L64.5 53 A14.5 14.5 0 0 0 52 38.639 L52 70 L59.5 82 Z" fill="#6E5126"/>
+<g id="stone" fill="#D4AF5E">
+<path id="voussoir_1" d="M25.637 50.41 A24.5 24.5 0 0 1 27.394 43.553 L34.315 46.445 A17 17 0 0 0 33.095 51.203 Z"/>
+<path id="voussoir_2" d="M28.52 41.216 A24.5 24.5 0 0 1 33.732 34.681 L38.712 40.289 A17 17 0 0 0 35.096 44.823 Z"/>
+<path id="voussoir_3" d="M35.76 33.063 A24.5 24.5 0 0 1 43.291 29.436 L45.345 36.65 A17 17 0 0 0 40.119 39.166 Z"/>
+<path id="keystone" d="M45.309 25.903 A27.5 27.5 0 0 1 54.691 25.903 L52.9 36.249 A17 17 0 0 0 47.1 36.249 Z"/>
+<path id="voussoir_5" d="M56.709 29.436 A24.5 24.5 0 0 1 64.24 33.063 L59.881 39.166 A17 17 0 0 0 54.655 36.65 Z"/>
+<path id="voussoir_6" d="M66.268 34.681 A24.5 24.5 0 0 1 71.48 41.216 L64.904 44.823 A17 17 0 0 0 61.288 40.289 Z"/>
+<path id="voussoir_7" d="M72.606 43.553 A24.5 24.5 0 0 1 74.363 50.41 L66.905 51.203 A17 17 0 0 0 65.685 46.445 Z"/>
+<path id="jamb_left_top" d="M25.5 53 H33 V66.6 H25.5 Z"/>
+<path id="jamb_left_bottom" d="M25.5 68.4 H33 V82 H25.5 Z"/>
+<path id="jamb_right_top" d="M67 53 H74.5 V66.6 H67 Z"/>
+<path id="jamb_right_bottom" d="M67 68.4 H74.5 V82 H67 Z"/>
+<path id="frame_top_l" d="M15 15 L41.879 15 L41.879 19 L15 19 Z"/>
+<path id="frame_top_r" d="M85 15 L58.121 15 L58.121 19 L85 19 Z"/>
+<path id="frame_bottom_l" d="M15 81 L41.879 81 L41.879 85 L15 85 Z"/>
+<path id="frame_bottom_r" d="M85 81 L58.121 81 L58.121 85 L85 85 Z"/>
+<path id="frame_left_t" d="M15 15 L19 15 L19 41.879 L15 41.879 Z"/>
+<path id="frame_left_b" d="M15 85 L19 85 L19 58.121 L15 58.121 Z"/>
+<path id="frame_right_t" d="M85 15 L81 15 L81 41.879 L85 41.879 Z"/>
+<path id="frame_right_b" d="M85 85 L81 85 L81 58.121 L85 58.121 Z"/>
+<path d="M56 17 L50 23 L50 17 Z"/>
+<path d="M50 23 L44 17 L50 17 Z"/>
+<path d="M44 83 L50 77 L50 83 Z"/>
+<path d="M50 77 L56 83 L50 83 Z"/>
+<path d="M17 44 L23 50 L17 50 Z"/>
+<path d="M23 50 L17 56 L17 50 Z"/>
+<path d="M77 50 L83 44 L83 50 Z"/>
+<path d="M83 56 L77 50 L83 50 Z"/>
+</g>
+<g id="gem_light" fill="#FFEFBF">
+<path d="M44 17 L50 11 L50 17 Z"/>
+<path d="M50 11 L56 17 L50 17 Z"/>
+<path d="M56 83 L50 89 L50 83 Z"/>
+<path d="M50 89 L44 83 L50 83 Z"/>
+<path d="M11 50 L17 44 L17 50 Z"/>
+<path d="M17 56 L11 50 L17 50 Z"/>
+<path d="M83 44 L89 50 L83 50 Z"/>
+<path d="M89 50 L83 56 L83 50 Z"/>
+</g></svg>

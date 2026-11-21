@@ -1,0 +1,56 @@
+{
+  "profile": {
+    "makerworld": "https://makerworld.com/en/@FramedWorlds",
+    "instagram": "https://www.instagram.com/framedworldsdiorama/"
+  },
+  "categories": [
+    {"id": "small", "label": "Small frame"},
+    {"id": "medium", "label": "Medium frame"},
+    {"id": "large", "label": "Large frame"},
+    {"id": "bas-relief", "label": "Bas-relief"}
+  ],
+  "models": [
+    {
+      "title": "Gothic Chapel Gate",
+      "categories": ["medium"],
+      "description": "A ruined chapel doorway opening onto a moonlit valley. 15 × 15 cm frame, prints without supports.",
+      "image": "images/example-1.jpg",
+      "alt": "Painted 3D printed frame showing a gothic chapel gate",
+      "makerworld": "https://makerworld.com/en/models/000000",
+      "instagram": "https://www.instagram.com/p/XXXXXXXX/",
+      "tags": ["Gothic", "15 × 15 cm"],
+      "date": "2026-11-20"
+    },
+    {
+      "title": "Forgotten Library Window",
+      "categories": ["small"],
+      "description": "Stacked shelves and a stained-glass window, framed like a book cover.",
+      "image": "images/example-2.jpg",
+      "alt": "3D printed frame showing an old library window",
+      "makerworld": "https://makerworld.com/en/models/000001",
+      "tags": ["Interior", "10 × 15 cm"],
+      "date": "2026-11-10"
+    },
+    {
+      "title": "Dragon's Watchtower",
+      "categories": ["large"],
+      "description": "A cliffside tower with a sleeping dragon curled around its base.",
+      "image": "images/example-3.jpg",
+      "alt": "3D printed frame showing a watchtower with a dragon",
+      "makerworld": "https://makerworld.com/en/models/000002",
+      "instagram": "https://www.instagram.com/p/YYYYYYYY/",
+      "tags": ["Landscape", "Multi-color"],
+      "date": "2026-11-01"
+    },
+    {
+      "title": "Ivy Crest",
+      "categories": ["bas-relief"],
+      "description": "A carved stone crest overgrown with ivy, designed as a wall bas-relief.",
+      "image": "images/example-4.jpg",
+      "alt": "3D printed bas-relief of a stone crest with ivy",
+      "makerworld": "https://makerworld.com/en/models/000003",
+      "tags": ["Wall decor"],
+      "date": "2026-10-25"
+    }
+  ]
+}

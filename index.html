@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Framed Worlds — 3D printable framed fantasy dioramas</title>
+  <meta name="description" content="Miniature fantasy worlds set in their own frames. 3D printable models available on MakerWorld.">
+  <meta name="theme-color" content="#0F1424">
+
+  <!-- Domaine du site (aperçus de liens partagés) -->
+  <link rel="canonical" href="https://framedworlds.com/">
+  <meta property="og:url" content="https://framedworlds.com/">
+  <meta property="og:image" content="https://framedworlds.com/assets/og-image.png">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Framed Worlds">
+  <meta property="og:description" content="Miniature fantasy worlds set in their own frames. 3D printable models on MakerWorld.">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <link rel="preload" href="assets/fonts/cormorant-sc-700.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#models">Skip to models</a>
+
+  <header class="site-header">
+    <a class="brand" href="./" aria-label="Framed Worlds — home">
+      <img src="assets/icon.svg" alt="" width="40" height="40">
+      <span>Framed Worlds</span>
+    </a>
+    <nav aria-label="Main">
+      <a href="#models">Models</a>
+      <a data-link="makerworld" href="#" target="_blank" rel="noopener">MakerWorld</a>
+      <a data-link="instagram" href="#" target="_blank" rel="noopener">Instagram</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-glow" aria-hidden="true"></div>
+      <img class="hero-icon" src="assets/icon.svg" alt="" width="168" height="168">
+      <h1>Framed Worlds</h1>
+      <p class="tagline">Miniature fantasy worlds, each one set in its own frame.<br>
+        Designed for 3D printing — print it, paint it, hang it.</p>
+      <div class="actions">
+        <a class="btn btn-primary" data-link="makerworld" href="#" target="_blank" rel="noopener">Browse on MakerWorld</a>
+        <a class="btn btn-ghost" data-link="instagram" href="#" target="_blank" rel="noopener">Follow on Instagram</a>
+      </div>
+    </section>
+
+    <section id="models" class="models" aria-labelledby="models-title">
+      <div class="section-head">
+        <h2 id="models-title">The worlds</h2>
+        <span class="rule" aria-hidden="true"></span>
+      </div>
+      <div id="filters" class="filters" role="group" aria-label="Filter by category" hidden></div>
+      <div id="grid" class="grid" aria-live="polite">
+        <p class="status">Loading…</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <img src="assets/icon.svg" alt="" width="28" height="28">
+    <p>© <span id="year">2026</span> Framed Worlds · Models published on MakerWorld</p>
+    <nav aria-label="Footer">
+      <a data-link="makerworld" href="#" target="_blank" rel="noopener">MakerWorld</a>
+      <a data-link="instagram" href="#" target="_blank" rel="noopener">Instagram</a>
+    </nav>
+  </footer>
+
+  <script src="app.js" defer></script>
+</body>
+</html>
