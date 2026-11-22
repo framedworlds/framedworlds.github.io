@@ -1,11 +1,16 @@
-// Framed Worlds — charge models.json et construit la galerie.
-// Tout le contenu est inséré via textContent (aucun HTML injecté depuis le JSON).
+// Framed Worlds — builds the gallery and the photo viewer from models.json.
+// All content is inserted with textContent (no HTML is injected from the JSON).
 (function () {
   "use strict";
 
   var grid = document.getElementById("grid");
+  var filters = document.getElementById("filters");
   document.getElementById("year").textContent = new Date().getFullYear();
 
+  var catLabel = {};        // category id -> label
+  var models = [];
+
+  // ---------- helpers ----------
   function safeUrl(u) {
     return typeof u === "string" && /^https?:\/\//i.test(u) ? u : null;
   }
@@ -17,11 +22,41 @@
     return n;
   }
 
+  // MakerWorld's CDN can resize on the fly: request a light WebP at the needed width.
+  // Local paths (images/...) are used as they are.
+  function sized(src, w) {
+    if (typeof src === "string" && /^https:\/\/makerworld\.bblmw\.com\//.test(src) && src.indexOf("?") === -1) {
+      return src + "?x-oss-process=image/resize,w_" + w + "/format,webp";
+    }
+    return src;
+  }
+
+  function imagesOf(m) {
+    if (Array.isArray(m.images) && m.images.length) {
+      return m.images.filter(function (i) { return i && i.src; });
+    }
+    return m.image ? [{ src: m.image, caption: "" }] : [];   // older single-image format
+  }
+
+  function altOf(m, img) {
+    return img.alt || (m.title || "Model") + (img.caption ? " — " + img.caption : "");
+  }
+
+  function catsOf(m) {
+    return Array.isArray(m.categories) ? m.categories.filter(function (c) { return catLabel[c]; }) : [];
+  }
+
   function status(msg, hint) {
     grid.textContent = "";
     var p = el("p", { class: "status" }, msg);
     if (hint) { p.appendChild(document.createElement("br")); p.appendChild(el("code", null, hint)); }
     grid.appendChild(p);
+  }
+
+  function setParam(key, value) {
+    var u = new URL(location.href);
+    if (value) u.searchParams.set(key, value); else u.searchParams.delete(key);
+    history.replaceState(null, "", u);
   }
 
   function setProfileLinks(profile) {
@@ -33,45 +68,187 @@
     });
   }
 
-  var catLabel = {};          // id -> label
-  var filters = document.getElementById("filters");
-
-  function catsOf(m) {
-    return Array.isArray(m.categories) ? m.categories.filter(function (c) { return catLabel[c]; }) : [];
+  function tagList(m) {
+    var cats = catsOf(m);
+    var tags = Array.isArray(m.tags) ? m.tags : [];
+    if (!cats.length && !tags.length) return null;
+    var ul = el("ul", { class: "tags" });
+    cats.forEach(function (c) { ul.appendChild(el("li", { class: "cat" }, catLabel[c])); });
+    tags.forEach(function (t) { ul.appendChild(el("li", null, String(t))); });
+    return ul;
   }
 
-  function card(m) {
+  // ---------- cards ----------
+  function card(m, index) {
+    var imgs = imagesOf(m);
     var mw = safeUrl(m.makerworld);
-    var ig = safeUrl(m.instagram);
     var c = el("article", { class: "card" });
 
-    var media = el(mw ? "a" : "div", mw ? { class: "card-media", href: mw, target: "_blank", rel: "noopener", tabindex: "-1", "aria-hidden": "true" } : { class: "card-media" });
-    var img = el("img", { src: m.image || "", alt: m.alt || m.title || "", loading: "lazy", decoding: "async", width: "1200", height: "1200" });
-    img.addEventListener("error", function () { media.classList.add("missing"); });
-    if (!m.image) media.classList.add("missing");
-    media.appendChild(img);
+    var media = el("button", { type: "button", class: "card-media", "aria-label": "View photos and details: " + (m.title || "model") });
+    if (imgs.length) {
+      var img = el("img", {
+        src: sized(imgs[0].src, 640),
+        srcset: sized(imgs[0].src, 640) + " 640w, " + sized(imgs[0].src, 960) + " 960w",
+        sizes: "(max-width: 600px) 100vw, 380px",
+        alt: altOf(m, imgs[0]), loading: index < 3 ? "eager" : "lazy", decoding: "async", width: "640", height: "480"
+      });
+      img.addEventListener("error", function () { media.classList.add("missing"); });
+      media.appendChild(img);
+      if (imgs.length > 1) media.appendChild(el("span", { class: "count", "aria-hidden": "true" }, imgs.length + " photos"));
+    } else {
+      media.classList.add("missing");
+    }
+    media.addEventListener("click", function () { openViewer(m, 0); });
     c.appendChild(media);
 
     var body = el("div", { class: "card-body" });
+    if (m.collection) body.appendChild(el("p", { class: "eyebrow" }, m.collection));
     body.appendChild(el("h3", null, m.title || "Untitled"));
     if (m.description) body.appendChild(el("p", null, m.description));
-    var cats = catsOf(m);
-    var tags = Array.isArray(m.tags) ? m.tags : [];
-    if (cats.length || tags.length) {
-      var ul = el("ul", { class: "tags" });
-      cats.forEach(function (c) { ul.appendChild(el("li", { class: "cat" }, catLabel[c])); });
-      tags.forEach(function (t) { ul.appendChild(el("li", null, String(t))); });
-      body.appendChild(ul);
-    }
+    var tags = tagList(m);
+    if (tags) body.appendChild(tags);
+
     var actions = el("div", { class: "card-actions" });
-    var t = m.title || "this model";
-    if (mw) actions.appendChild(el("a", { class: "btn btn-primary btn-sm", href: mw, target: "_blank", rel: "noopener", "aria-label": "Download " + t + " on MakerWorld" }, "MakerWorld ↗"));
-    if (ig) actions.appendChild(el("a", { class: "btn btn-ghost btn-sm", href: ig, target: "_blank", rel: "noopener", "aria-label": t + " on Instagram" }, "Instagram ↗"));
+    var more = el("button", { type: "button", class: "btn btn-ghost btn-sm" }, "Details");
+    more.addEventListener("click", function () { openViewer(m, 0); });
+    actions.appendChild(more);
+    if (mw) actions.appendChild(el("a", { class: "btn btn-primary btn-sm", href: mw, target: "_blank", rel: "noopener", "aria-label": "Download " + (m.title || "this model") + " on MakerWorld" }, "MakerWorld ↗"));
     body.appendChild(actions);
     c.appendChild(body);
     return c;
   }
 
+  // ---------- viewer (dialog) ----------
+  var dlg, stageImg, caption, counter, thumbs, info, prevBtn, nextBtn, current = null, pos = 0, touchX = null;
+
+  function buildViewer() {
+    dlg = el("dialog", { class: "viewer", "aria-labelledby": "viewer-title" });
+    var shell = el("div", { class: "viewer-shell" });
+
+    var close = el("button", { type: "button", class: "viewer-close", "aria-label": "Close" }, "×");
+    close.addEventListener("click", function () { dlg.close(); });
+
+    var gallery = el("div", { class: "viewer-gallery" });
+    var stage = el("div", { class: "viewer-stage" });
+    stageImg = el("img", { alt: "", decoding: "async" });
+    prevBtn = el("button", { type: "button", class: "viewer-nav prev", "aria-label": "Previous photo" }, "‹");
+    nextBtn = el("button", { type: "button", class: "viewer-nav next", "aria-label": "Next photo" }, "›");
+    prevBtn.addEventListener("click", function () { show(pos - 1); });
+    nextBtn.addEventListener("click", function () { show(pos + 1); });
+    stage.appendChild(stageImg); stage.appendChild(prevBtn); stage.appendChild(nextBtn);
+    stage.addEventListener("touchstart", function (e) { touchX = e.touches[0].clientX; }, { passive: true });
+    stage.addEventListener("touchend", function (e) {
+      if (touchX === null) return;
+      var dx = e.changedTouches[0].clientX - touchX; touchX = null;
+      if (Math.abs(dx) > 40) show(pos + (dx < 0 ? 1 : -1));
+    });
+
+    var meta = el("div", { class: "viewer-meta" });
+    caption = el("p", { class: "viewer-caption" });
+    counter = el("p", { class: "viewer-counter", "aria-live": "polite" });
+    meta.appendChild(caption); meta.appendChild(counter);
+    thumbs = el("div", { class: "viewer-thumbs" });
+    gallery.appendChild(stage); gallery.appendChild(meta); gallery.appendChild(thumbs);
+
+    info = el("div", { class: "viewer-info", tabindex: "-1" });
+    shell.appendChild(gallery); shell.appendChild(info);
+    dlg.appendChild(close); dlg.appendChild(shell);
+
+    dlg.addEventListener("keydown", function (e) {
+      if (e.key === "ArrowLeft") { e.preventDefault(); show(pos - 1); }
+      if (e.key === "ArrowRight") { e.preventDefault(); show(pos + 1); }
+    });
+    dlg.addEventListener("click", function (e) { if (e.target === dlg) dlg.close(); });   // backdrop
+    dlg.addEventListener("close", function () {
+      document.documentElement.classList.remove("modal-open");
+      setParam("model", null);
+      current = null;
+    });
+    document.body.appendChild(dlg);
+  }
+
+  function show(i) {
+    var imgs = imagesOf(current);
+    if (!imgs.length) return;
+    pos = (i + imgs.length) % imgs.length;
+    var img = imgs[pos];
+    stageImg.src = sized(img.src, 1400);
+    stageImg.alt = altOf(current, img);
+    caption.textContent = img.caption || "";
+    counter.textContent = imgs.length > 1 ? (pos + 1) + " / " + imgs.length : "";
+    thumbs.querySelectorAll("button").forEach(function (b, k) {
+      if (k === pos) {
+        b.setAttribute("aria-current", "true");
+        // keep the active thumbnail visible without scrolling anything else
+        thumbs.scrollTo({ left: b.offsetLeft - (thumbs.clientWidth - b.clientWidth) / 2, behavior: "smooth" });
+      }
+      else b.removeAttribute("aria-current");
+    });
+    if (imgs.length > 1) { var pre = new Image(); pre.src = sized(imgs[(pos + 1) % imgs.length].src, 1400); }
+  }
+
+  function fillInfo(m) {
+    info.textContent = "";
+    if (m.collection) info.appendChild(el("p", { class: "eyebrow" }, m.collection));
+    info.appendChild(el("h2", { id: "viewer-title" }, m.title || "Untitled"));
+    if (m.description) info.appendChild(el("p", { class: "lead" }, m.description));
+    (Array.isArray(m.details) ? m.details : []).forEach(function (p) { info.appendChild(el("p", null, String(p))); });
+
+    if (Array.isArray(m.specs) && m.specs.length) {
+      var dl = el("dl", { class: "specs" });
+      m.specs.forEach(function (s) {
+        if (!Array.isArray(s) || s.length < 2) return;
+        var row = el("div");
+        row.appendChild(el("dt", null, String(s[0])));
+        row.appendChild(el("dd", null, String(s[1])));
+        dl.appendChild(row);
+      });
+      info.appendChild(dl);
+    }
+    var tags = tagList(m);
+    if (tags) info.appendChild(tags);
+
+    var actions = el("div", { class: "viewer-actions" });
+    var mw = safeUrl(m.makerworld), ig = safeUrl(m.instagram);
+    if (mw) actions.appendChild(el("a", { class: "btn btn-primary", href: mw, target: "_blank", rel: "noopener" }, "Download on MakerWorld ↗"));
+    if (ig) actions.appendChild(el("a", { class: "btn btn-ghost", href: ig, target: "_blank", rel: "noopener" }, "Instagram ↗"));
+    info.appendChild(actions);
+
+    var links = (Array.isArray(m.links) ? m.links : []).filter(function (l) { return l && l.label && safeUrl(l.url); });
+    if (links.length) {
+      var ul = el("ul", { class: "extra-links" });
+      links.forEach(function (l) {
+        var li = el("li");
+        li.appendChild(el("a", { href: l.url, target: "_blank", rel: "noopener" }, l.label + " ↗"));
+        ul.appendChild(li);
+      });
+      info.appendChild(ul);
+    }
+    info.scrollTop = 0;
+  }
+
+  function openViewer(m, start) {
+    if (!dlg) buildViewer();
+    current = m;
+    var imgs = imagesOf(m);
+    thumbs.textContent = "";
+    imgs.forEach(function (img, k) {
+      var b = el("button", { type: "button", "aria-label": "Photo " + (k + 1) + " of " + imgs.length + (img.caption ? ": " + img.caption : "") });
+      b.appendChild(el("img", { src: sized(img.src, 160), alt: "", loading: "lazy", decoding: "async" }));
+      b.addEventListener("click", function () { show(k); });
+      thumbs.appendChild(b);
+    });
+    var many = imgs.length > 1;
+    prevBtn.hidden = nextBtn.hidden = thumbs.hidden = !many;
+    fillInfo(m);
+    if (!dlg.open) dlg.showModal();
+    info.focus({ preventScroll: true });
+    document.documentElement.classList.add("modal-open");
+    show(start || 0);
+    if (m.id) setParam("model", m.id);
+  }
+
+  // ---------- load ----------
   fetch("models.json", { cache: "no-cache" })
     .then(function (r) {
       if (!r.ok) throw new Error("HTTP " + r.status);
@@ -79,15 +256,14 @@
     })
     .then(function (data) {
       setProfileLinks(data.profile || {});
-      var models = (data.models || []).slice();
-      // plus récents d'abord (si "date" renseignée), sinon ordre du fichier
+      models = (data.models || []).slice();
+      // newest first when "date" is set, otherwise file order
       models.sort(function (a, b) { return (b.date || "").localeCompare(a.date || ""); });
       if (!models.length) { status("New worlds are on their way — follow along on Instagram."); return; }
 
       (data.categories || []).forEach(function (c) {
         if (c && c.id && c.label) catLabel[c.id] = c.label;
       });
-      // catégories effectivement utilisées, dans l'ordre du fichier (les vides sont masquées)
       var used = (data.categories || []).filter(function (c) {
         return catLabel[c.id] && models.some(function (m) { return catsOf(m).indexOf(c.id) !== -1; });
       });
@@ -100,10 +276,11 @@
         grid.textContent = "";
         models
           .filter(function (m) { return active === "all" || catsOf(m).indexOf(active) !== -1; })
-          .forEach(function (m) { grid.appendChild(card(m)); });
+          .forEach(function (m, i) { grid.appendChild(card(m, i)); });
       }
 
-      if (used.length) {
+      // filters only make sense with at least two categories in use
+      if (used.length >= 2) {
         var chips = [{ id: "all", label: "All" }].concat(used);
         chips.forEach(function (c) {
           var n = c.id === "all" ? models.length
@@ -115,9 +292,7 @@
             filters.querySelectorAll(".chip").forEach(function (x) {
               x.setAttribute("aria-pressed", String(x.getAttribute("data-cat") === active));
             });
-            var u = new URL(location.href);
-            if (active === "all") u.searchParams.delete("category"); else u.searchParams.set("category", active);
-            history.replaceState(null, "", u);
+            setParam("category", active === "all" ? null : active);
             render();
           });
           filters.appendChild(b);
@@ -125,6 +300,11 @@
         filters.hidden = false;
       }
       render();
+
+      // deep link: ?model=<id> opens that model's viewer
+      var wanted = params.get("model");
+      var target = wanted && models.filter(function (m) { return m.id === wanted; })[0];
+      if (target) openViewer(target, 0);
     })
     .catch(function (err) {
       console.error("models.json:", err);

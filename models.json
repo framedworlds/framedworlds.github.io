@@ -9,5 +9,209 @@
     {"id": "large", "label": "Large frame"},
     {"id": "bas-relief", "label": "Bas-relief"}
   ],
-  "models": []
+  "models": [
+    {
+      "id": "hindu-temple",
+      "title": "Hindu Temple",
+      "collection": "Sacred Facades",
+      "categories": ["bas-relief"],
+      "description": "A North Indian temple seen through a carved stone gateway.",
+      "details": [
+        "An original design in the Nagara style, not a copy of any real temple. In front, a torana gateway with thick pillars and a garland-shaped arch frames the view. Through it rises the temple: a curved shikhara tower topped by an amalaka and a kalasha finial, two small corner turrets, a stepped porch roof on pillars, a carved frieze and a flight of steps. The sky is carved as scrolling clouds. No figures or symbols are shown.",
+        "Sandstone is the obvious choice: warm ochre and pink with darker washes in the stone courses, and a soft sky behind. The one in the photos is just my take."
+      ],
+      "specs": [
+        ["Relief", "70 × 146 × 15 mm"],
+        ["Framed", "78 × 154 mm in the black large frame, up to 92 × 168 mm in wood moulding"],
+        ["Visible scene", "64 × 140 mm"],
+        ["Printing", "Upright, no supports · 0.08 mm layers · PLA"],
+        ["Print time", "≈ 6 h 07 min · 41 g · single colour"]
+      ],
+      "images": [
+        {"src": "https://makerworld.bblmw.com/makerworld/model/US6aa0af69f41815/design/c2df4d214953d9da.jpg", "caption": "In its frame"},
+        {"src": "https://makerworld.bblmw.com/makerworld/model/US6aa0af69f41815/design/bc56280aa71c0c37.jpg", "caption": "On display"},
+        {"src": "https://makerworld.bblmw.com/makerworld/model/US6aa0af69f41815/design/9a611d341ce189cc.jpg", "caption": "On display"},
+        {"src": "https://makerworld.bblmw.com/makerworld/model/US6aa0af69f41815/design/180f052070b3799f.jpg", "caption": "Close-up"},
+        {"src": "https://makerworld.bblmw.com/makerworld/model/US6aa0af69f41815/design/baf015f6475a62b3.jpg", "caption": "3D render, three-quarter view (unpainted)"},
+        {"src": "https://makerworld.bblmw.com/makerworld/model/US6aa0af69f41815/design/4466beb051fd4955.jpg", "caption": "3D render, front view (unpainted)"}
+      ],
+      "makerworld": "https://makerworld.com/en/models/3665188-hindu-temple-framed-bas-relief-diorama",
+      "links": [
+        {"label": "Frame & stand (separate free model)", "url": "https://makerworld.com/en/models/3664626-frames-for-bas-relief-dioramas"}
+      ],
+      "tags": ["Hindu temple", "Nagara style"],
+      "date": "2026-11-22"
+    },
+    {
+      "id": "moorish-synagogue",
+      "title": "Moorish Synagogue",
+      "collection": "Sacred Facades",
+      "categories": ["bas-relief"],
+      "description": "Domes, horseshoe arches and a dawn sky, in a frame.",
+      "details": [
+        "This one follows the Moorish Revival style of 19th-century European synagogues, without copying any real building. A giant brick horseshoe arch takes up most of the facade. Inside it, a polylobed portal with wooden doors, and above the door the two rounded Tablets of the Law, left plain so you can add lettering or not. Twin horseshoe windows, a rose window, two slim octagonal towers with ribbed domes and a big central dome complete it, against a dawn sky in low relief.",
+        "Brick, stone, copper and wood all have their own texture. Red brick with pale stone trim, green-patina domes and a pink-orange sky work really well. The one in the photos is just my take."
+      ],
+      "specs": [
+        ["Relief", "70 × 146 × 15 mm"],
+        ["Framed", "78 × 154 mm in the black large frame, up to 92 × 168 mm in wood moulding"],
+        ["Visible scene", "64 × 140 mm"],
+        ["Printing", "Upright, no supports · 0.08 mm layers · PLA"],
+        ["Print time", "≈ 6 h 02 min · 39 g · single colour"]
+      ],
+      "images": [
+        {"src": "https://makerworld.bblmw.com/makerworld/model/US1e971e840aea70/design/88a687e4a23177f0.jpg", "caption": "In its frame"},
+        {"src": "https://makerworld.bblmw.com/makerworld/model/US1e971e840aea70/design/17cd2f0fabd00c92.jpg", "caption": "Close-up"},
+        {"src": "https://makerworld.bblmw.com/makerworld/model/US1e971e840aea70/design/9268beab6688d897.jpg", "caption": "Close-up"},
+        {"src": "https://makerworld.bblmw.com/makerworld/model/US1e971e840aea70/design/a67308f002394e92.jpg", "caption": "On display"},
+        {"src": "https://makerworld.bblmw.com/makerworld/model/US1e971e840aea70/design/8ccbdae6b88c4697.jpg", "caption": "On display"},
+        {"src": "https://makerworld.bblmw.com/makerworld/model/US1e971e840aea70/design/a48d287ff72dc9a8.jpg", "caption": "Close-up"},
+        {"src": "https://makerworld.bblmw.com/makerworld/model/US1e971e840aea70/design/aeb529e5b33886a3.jpg", "caption": "Close-up"},
+        {"src": "https://makerworld.bblmw.com/makerworld/model/US1e971e840aea70/design/2feaae1e4d321457.jpg", "caption": "3D render, three-quarter view (unpainted)"},
+        {"src": "https://makerworld.bblmw.com/makerworld/model/US1e971e840aea70/design/9706cb1104043580.jpg", "caption": "3D render, front view (unpainted)"}
+      ],
+      "makerworld": "https://makerworld.com/en/models/3665148-moorish-synagogue-framed-bas-relief-diorama",
+      "links": [
+        {"label": "Frame & stand (separate free model)", "url": "https://makerworld.com/en/models/3664626-frames-for-bas-relief-dioramas"}
+      ],
+      "tags": ["Synagogue", "Moorish Revival"],
+      "date": "2026-11-22"
+    },
+    {
+      "id": "norwegian-stave-church",
+      "title": "Norwegian Stave Church",
+      "collection": "Sacred Facades",
+      "categories": ["bas-relief"],
+      "description": "A little piece of medieval Norway for your painting desk.",
+      "details": [
+        "This is an original stave church in bas-relief. It's inspired by the old wooden churches of Norway, but it isn't a copy of any real one. Shingled roofs stack up in tiers to a tiny belfry and spire, with dragon heads at the gable ends. Down below, a covered gallery runs along a fieldstone base, and a gabled porch shelters a tall arched door with iron straps. Fir trees and mountain slopes fill in the background.",
+        "It's made for painting. Wood grain on the walls, shingles on every roof, rough stone at the base: a quick drybrush brings all of it out. Go warm timber, grey weathered wood, or dark and moody with snow on the roofs. The one in the photos is just my take."
+      ],
+      "specs": [
+        ["Relief", "70 × 146 × 15 mm"],
+        ["Framed", "78 × 154 mm in the black large frame, up to 92 × 168 mm in wood moulding"],
+        ["Visible scene", "64 × 140 mm"],
+        ["Printing", "Upright, no supports · 0.08 mm layers · PLA"],
+        ["Print time", "≈ 5 h 37 min · 37 g · single colour"]
+      ],
+      "images": [
+        {"src": "https://makerworld.bblmw.com/makerworld/model/US52a2ef0504651b/design/24efb4a3e447eae6.jpg", "caption": "In its frame"},
+        {"src": "https://makerworld.bblmw.com/makerworld/model/US52a2ef0504651b/design/a7dda3b1ae3c6a9e.jpg", "caption": "Close-up"},
+        {"src": "https://makerworld.bblmw.com/makerworld/model/US52a2ef0504651b/design/d268da83814d33dc.jpg", "caption": "On display"},
+        {"src": "https://makerworld.bblmw.com/makerworld/model/US52a2ef0504651b/design/63629d139eb0f308.jpg", "caption": "On display"},
+        {"src": "https://makerworld.bblmw.com/makerworld/model/US52a2ef0504651b/design/6b45d2e099a20516.jpg", "caption": "Close-up"},
+        {"src": "https://makerworld.bblmw.com/makerworld/model/US52a2ef0504651b/design/ca9d151e59b8caf5.jpg", "caption": "Close-up"},
+        {"src": "https://makerworld.bblmw.com/makerworld/model/US52a2ef0504651b/design/ad7fe61e10cdbeda.jpg", "caption": "Close-up"},
+        {"src": "https://makerworld.bblmw.com/makerworld/model/US52a2ef0504651b/design/df0ddb7776ec6eb3.jpg", "caption": "3D render, front view (unpainted)"},
+        {"src": "https://makerworld.bblmw.com/makerworld/model/US52a2ef0504651b/design/4680a40e0e7ea0ef.jpg", "caption": "3D render, three-quarter view (unpainted)"}
+      ],
+      "makerworld": "https://makerworld.com/en/models/3665101-norwegian-stave-church-framed-bas-relief-diorama",
+      "links": [
+        {"label": "Frame & stand (separate free model)", "url": "https://makerworld.com/en/models/3664626-frames-for-bas-relief-dioramas"}
+      ],
+      "tags": ["Stave church", "Scandinavian"],
+      "date": "2026-11-22"
+    },
+    {
+      "id": "andalusian-mosque",
+      "title": "Andalusian Mosque Facade",
+      "collection": "Sacred Facades",
+      "categories": ["bas-relief"],
+      "description": "A moonlit corner of Al-Andalus for your desk.",
+      "details": [
+        "An original design in the Andalusian-Maghrebi style, not a copy of any real building. A horseshoe-arch portal sits inside its rectangular alfiz moulding, with studded double doors, twisted columns, latticed side windows, a tiled canopy, a carved star frieze and a minaret on the central axis. In front, a polylobed arch opens onto a night sky with a crescent moon and eight-pointed stars.",
+        "Stone, plaster, wood and tiles each have their own texture, so it's a treat to paint. Try warm sandstone and white plaster, green or blue tiles, and a deep night sky with gold stars. The one in the photos is just my take."
+      ],
+      "specs": [
+        ["Relief", "70 × 146 × 15 mm"],
+        ["Framed", "78 × 154 mm in the black large frame, up to 92 × 168 mm in wood moulding"],
+        ["Visible scene", "64 × 140 mm"],
+        ["Printing", "Upright, no supports · 0.08 mm layers · PLA"],
+        ["Print time", "≈ 6 h 00 min · 37 g · single colour"]
+      ],
+      "images": [
+        {"src": "https://makerworld.bblmw.com/makerworld/model/USbede3a2e8fad5d/design/53626a5c80f48af0.jpg", "caption": "In its frame"},
+        {"src": "https://makerworld.bblmw.com/makerworld/model/USbede3a2e8fad5d/design/a7a63b389c49ec99.jpg", "caption": "Close-up"},
+        {"src": "https://makerworld.bblmw.com/makerworld/model/USbede3a2e8fad5d/design/eeb75dd1907f2d2e.jpg", "caption": "On display"},
+        {"src": "https://makerworld.bblmw.com/makerworld/model/USbede3a2e8fad5d/design/23140bc3e0259b22.jpg", "caption": "On display"},
+        {"src": "https://makerworld.bblmw.com/makerworld/model/USbede3a2e8fad5d/design/9379d4dbdb8eae36.jpg", "caption": "Close-up"},
+        {"src": "https://makerworld.bblmw.com/makerworld/model/USbede3a2e8fad5d/design/87351fd70172cc9c.jpg", "caption": "Close-up"},
+        {"src": "https://makerworld.bblmw.com/makerworld/model/USbede3a2e8fad5d/design/1fae999331873ddb.jpg", "caption": "3D render, three-quarter view (unpainted)"},
+        {"src": "https://makerworld.bblmw.com/makerworld/model/USbede3a2e8fad5d/design/85311da02f62f2af.jpg", "caption": "3D render, front view (unpainted)"}
+      ],
+      "makerworld": "https://makerworld.com/en/models/3665069-andalusian-mosque-facade-framed-bas-relief-diorama",
+      "links": [
+        {"label": "Frame & stand (separate free model)", "url": "https://makerworld.com/en/models/3664626-frames-for-bas-relief-dioramas"}
+      ],
+      "tags": ["Mosque", "Andalusian"],
+      "date": "2026-11-22"
+    },
+    {
+      "id": "gothic-cathedral",
+      "title": "Gothic Cathedral Facade",
+      "collection": "Sacred Facades",
+      "categories": ["bas-relief"],
+      "description": "A whole Gothic cathedral front, shrunk down to fit on your shelf.",
+      "details": [
+        "Rose window, three tall lancet windows with tracery, pinnacled buttresses and a crocketed gable with a cross, all under a steep slate roof. At the bottom, a pointed-arch portal with clustered colonnettes frames the wooden doors. The tympanum above the door is inspired by the Dormition relief of Strasbourg Cathedral, a medieval sculpture in the public domain. Every wall is dressed stone, block by block.",
+        "Lots to play with for painters: pale limestone with dark washes in the joints, a slate-grey roof, warm wooden doors, and that rose window just begging for a bit of colour. The one in the photos is just my take."
+      ],
+      "specs": [
+        ["Relief", "70 × 146 × 15 mm"],
+        ["Framed", "78 × 154 mm in the black large frame, up to 92 × 168 mm in wood moulding"],
+        ["Visible scene", "64 × 140 mm"],
+        ["Printing", "Upright, no supports · 0.08 mm layers · PLA"],
+        ["Print time", "≈ 6 h 53 min · 42 g · single colour"]
+      ],
+      "images": [
+        {"src": "https://makerworld.bblmw.com/makerworld/model/US438f2473f0fe12/design/7c0963d44114b98f.jpg", "caption": "In its frame"},
+        {"src": "https://makerworld.bblmw.com/makerworld/model/US438f2473f0fe12/design/e0b49d938aadf259.jpg", "caption": "On display"},
+        {"src": "https://makerworld.bblmw.com/makerworld/model/US438f2473f0fe12/design/a96aa664ffcc9f37.jpg", "caption": "Close-up"},
+        {"src": "https://makerworld.bblmw.com/makerworld/model/US438f2473f0fe12/design/ca33bba976494dbc.jpg", "caption": "Close-up"},
+        {"src": "https://makerworld.bblmw.com/makerworld/model/US438f2473f0fe12/design/bbb73afe84fe8dbd.jpg", "caption": "On display"},
+        {"src": "https://makerworld.bblmw.com/makerworld/model/US438f2473f0fe12/design/292b0f2d2878e00f.jpg", "caption": "3D render, three-quarter view (unpainted)"},
+        {"src": "https://makerworld.bblmw.com/makerworld/model/US438f2473f0fe12/design/9bfe992a9211cf1a.jpg", "caption": "3D render, front view (unpainted)"}
+      ],
+      "makerworld": "https://makerworld.com/en/models/3664967-gothic-cathedral-facade-framed-bas-relief-diorama",
+      "links": [
+        {"label": "Frame & stand (separate free model)", "url": "https://makerworld.com/en/models/3664626-frames-for-bas-relief-dioramas"}
+      ],
+      "tags": ["Cathedral", "Gothic"],
+      "date": "2026-11-22"
+    },
+    {
+      "id": "orthodox-church",
+      "title": "Orthodox Church",
+      "collection": "Sacred Facades",
+      "categories": ["bas-relief"],
+      "description": "Onion domes under a winter sky, ready for your brushes.",
+      "details": [
+        "An original church in the Russian Orthodox style, not any real one. A big onion dome on a tall drum crowns the centre, with two slim bell towers on each side, open belfries, little tented roofs and their own domes, each topped by a three-bar cross. Below, tiers of kokoshnik gables step up towards the dome, and a stepped arched portal opens the porch. The domes are covered in scale shingles, and behind them sits a winter sky with flat stylised clouds and small stars.",
+        "This one is all about the domes: gold, blue with gold stars, green, or a mix. White walls and a cold blue sky make them pop. The one in the photos is just my take."
+      ],
+      "specs": [
+        ["Relief", "70 × 146 × 15 mm"],
+        ["Framed", "78 × 154 mm in the black large frame, up to 92 × 168 mm in wood moulding"],
+        ["Visible scene", "64 × 140 mm"],
+        ["Printing", "Upright, no supports · 0.08 mm layers · PLA"],
+        ["Print time", "≈ 5 h 23 min · 36 g · single colour"]
+      ],
+      "images": [
+        {"src": "https://makerworld.bblmw.com/makerworld/model/USa689e9df83e4ea/design/e66922689f2d53f3.jpg", "caption": "In its frame"},
+        {"src": "https://makerworld.bblmw.com/makerworld/model/USa689e9df83e4ea/design/73c6b441d38c8e9a.jpg", "caption": "Close-up"},
+        {"src": "https://makerworld.bblmw.com/makerworld/model/USa689e9df83e4ea/design/591fd37b2dc206fd.jpg", "caption": "On display"},
+        {"src": "https://makerworld.bblmw.com/makerworld/model/USa689e9df83e4ea/design/a134d74ec628320e.jpg", "caption": "On display"},
+        {"src": "https://makerworld.bblmw.com/makerworld/model/USa689e9df83e4ea/design/fa840023c53b57b2.jpg", "caption": "Close-up"},
+        {"src": "https://makerworld.bblmw.com/makerworld/model/USa689e9df83e4ea/design/185d6953cfdd514c.jpg", "caption": "Close-up"},
+        {"src": "https://makerworld.bblmw.com/makerworld/model/USa689e9df83e4ea/design/f18a90996e180718.jpg", "caption": "3D render, three-quarter view (unpainted)"},
+        {"src": "https://makerworld.bblmw.com/makerworld/model/USa689e9df83e4ea/design/f73cbd4cafdb4279.jpg", "caption": "3D render, front view (unpainted)"}
+      ],
+      "makerworld": "https://makerworld.com/en/models/3665012-orthodox-church-framed-bas-relief-diorama",
+      "links": [
+        {"label": "Frame & stand (separate free model)", "url": "https://makerworld.com/en/models/3664626-frames-for-bas-relief-dioramas"}
+      ],
+      "tags": ["Orthodox church", "Onion domes"],
+      "date": "2026-11-22"
+    }
+  ]
 }
