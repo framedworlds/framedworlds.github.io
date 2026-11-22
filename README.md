@@ -11,6 +11,7 @@ models.json    ← le seul fichier à modifier au quotidien
 images/        photos des modèles
 assets/        logo, favicon, image de partage, police
 check.py       vérification avant publication
+tools/         préparation des photos (photos.py)
 ```
 
 ## Ajouter un modèle
@@ -32,8 +33,8 @@ sur mobile, miniatures), description, caractéristiques et liens.
     ["Print time", "≈ 6 h 53 min · 42 g · single colour"]
   ],
   "images": [
-    {"src": "https://makerworld.bblmw.com/makerworld/model/…/design/….jpg", "caption": "In its frame"},
-    {"src": "images/gothic-detail.jpg", "caption": "Close-up"}
+    {"src": "images/gothic-cathedral/01-cover.webp", "thumb": "images/gothic-cathedral/01-cover-sm.webp", "caption": "In its frame"},
+    {"src": "images/gothic-cathedral/02-detail.webp", "caption": "Close-up"}
   ],
   "makerworld": "https://makerworld.com/en/models/3664967-…",
   "instagram": "https://www.instagram.com/p/ABC123/",
@@ -47,10 +48,13 @@ sur mobile, miniatures), description, caractéristiques et liens.
   un champ absent n'est simplement pas affiché.
 - **`id`** : en minuscules, avec des tirets. Il sert au lien direct vers la fiche,
   par exemple `https://framedworlds.com/?model=gothic-cathedral` (pratique pour un post Instagram).
-- **Photos** : la première sert de couverture (format 4:3 conseillé). Deux sources possibles :
-  - l'adresse de la photo **sur MakerWorld** (clic droit sur la photo › Copier l'adresse de l'image) :
-    le site demande automatiquement une version allégée (WebP, à la bonne largeur) ;
-  - un fichier dans **`images/`** (JPG, 1600 px de large maximum, moins de 300 Ko).
+- **Photos** : la première sert de couverture (format 4:3 conseillé). Elles sont hébergées sur le site,
+  dans **`images/<id>/`**, en deux tailles : `src` (1600 px, ~150 Ko) pour la galerie et `thumb`
+  (800 px, ~40 Ko) pour les cartes et les miniatures. `thumb` est facultatif.
+  Une adresse de photo MakerWorld fonctionne aussi : le site en demande alors une version allégée.
+- **Préparer les photos d'un nouveau modèle** : `python tools/photos.py <dossier_des_photos> <id>`
+  crée les deux tailles dans `images/<id>/` et affiche le bloc `"images"` à coller dans `models.json`
+  (le premier fichier par ordre alphabétique sert de couverture ; ajuste les légendes si besoin).
 - `caption` : la légende affichée sous la photo dans la galerie.
 - Les modèles sont triés du plus récent au plus ancien d'après `date` ; à date égale, l'ordre du fichier est conservé.
 

@@ -101,6 +101,9 @@ for i, m in enumerate(models, 1):
             warnings.append(f"{tag} : photo {k} lourde ({kb:.0f} Ko), vise < 300 Ko")
         if os.path.basename(src).startswith("example-"):
             warnings.append(f"{tag} : photo d'exemple à remplacer")
+        th = im.get("thumb")
+        if th and not th.startswith("http") and not os.path.isfile(os.path.join(ROOT, th)):
+            errors.append(f"{tag} : miniature {k} introuvable ({th})")
 
     for s in m.get("specs") or []:
         if not (isinstance(s, list) and len(s) == 2):

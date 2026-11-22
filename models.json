@@ -28,12 +28,12 @@
         ["Print time", "≈ 6 h 07 min · 41 g · single colour"]
       ],
       "images": [
-        {"src": "https://makerworld.bblmw.com/makerworld/model/US6aa0af69f41815/design/c2df4d214953d9da.jpg", "caption": "In its frame"},
-        {"src": "https://makerworld.bblmw.com/makerworld/model/US6aa0af69f41815/design/bc56280aa71c0c37.jpg", "caption": "On display"},
-        {"src": "https://makerworld.bblmw.com/makerworld/model/US6aa0af69f41815/design/9a611d341ce189cc.jpg", "caption": "On display"},
-        {"src": "https://makerworld.bblmw.com/makerworld/model/US6aa0af69f41815/design/180f052070b3799f.jpg", "caption": "Close-up"},
-        {"src": "https://makerworld.bblmw.com/makerworld/model/US6aa0af69f41815/design/baf015f6475a62b3.jpg", "caption": "3D render, three-quarter view (unpainted)"},
-        {"src": "https://makerworld.bblmw.com/makerworld/model/US6aa0af69f41815/design/4466beb051fd4955.jpg", "caption": "3D render, front view (unpainted)"}
+        {"src": "images/hindu-temple/01_photo_DSC_0475_nef_contexte.webp", "thumb": "images/hindu-temple/01_photo_DSC_0475_nef_contexte-sm.webp", "caption": "In its frame"},
+        {"src": "images/hindu-temple/03_photo_DSC_0500_nef_contexte.webp", "thumb": "images/hindu-temple/03_photo_DSC_0500_nef_contexte-sm.webp", "caption": "On display"},
+        {"src": "images/hindu-temple/04_photo_DSC_0503_nef_contexte.webp", "thumb": "images/hindu-temple/04_photo_DSC_0503_nef_contexte-sm.webp", "caption": "On display"},
+        {"src": "images/hindu-temple/07_photo_DSC_0371_nef.webp", "thumb": "images/hindu-temple/07_photo_DSC_0371_nef-sm.webp", "caption": "Close-up"},
+        {"src": "images/hindu-temple/09_rendu_trois_quarts.webp", "thumb": "images/hindu-temple/09_rendu_trois_quarts-sm.webp", "caption": "3D render, three-quarter view (unpainted)"},
+        {"src": "images/hindu-temple/08_rendu_face.webp", "thumb": "images/hindu-temple/08_rendu_face-sm.webp", "caption": "3D render, front view (unpainted)"}
       ],
       "makerworld": "https://makerworld.com/en/models/3665188-hindu-temple-framed-bas-relief-diorama",
       "links": [
@@ -60,15 +60,15 @@
         ["Print time", "≈ 6 h 02 min · 39 g · single colour"]
       ],
       "images": [
-        {"src": "https://makerworld.bblmw.com/makerworld/model/US1e971e840aea70/design/88a687e4a23177f0.jpg", "caption": "In its frame"},
-        {"src": "https://makerworld.bblmw.com/makerworld/model/US1e971e840aea70/design/17cd2f0fabd00c92.jpg", "caption": "Close-up"},
-        {"src": "https://makerworld.bblmw.com/makerworld/model/US1e971e840aea70/design/9268beab6688d897.jpg", "caption": "Close-up"},
-        {"src": "https://makerworld.bblmw.com/makerworld/model/US1e971e840aea70/design/a67308f002394e92.jpg", "caption": "On display"},
-        {"src": "https://makerworld.bblmw.com/makerworld/model/US1e971e840aea70/design/8ccbdae6b88c4697.jpg", "caption": "On display"},
-        {"src": "https://makerworld.bblmw.com/makerworld/model/US1e971e840aea70/design/a48d287ff72dc9a8.jpg", "caption": "Close-up"},
-        {"src": "https://makerworld.bblmw.com/makerworld/model/US1e971e840aea70/design/aeb529e5b33886a3.jpg", "caption": "Close-up"},
-        {"src": "https://makerworld.bblmw.com/makerworld/model/US1e971e840aea70/design/2feaae1e4d321457.jpg", "caption": "3D render, three-quarter view (unpainted)"},
-        {"src": "https://makerworld.bblmw.com/makerworld/model/US1e971e840aea70/design/9706cb1104043580.jpg", "caption": "3D render, front view (unpainted)"}
+        {"src": "images/moorish-synagogue/01_photo_DSC_0473_nef_contexte.webp", "thumb": "images/moorish-synagogue/01_photo_DSC_0473_nef_contexte-sm.webp", "caption": "In its frame"},
+        {"src": "images/moorish-synagogue/07_photo_DSC_0400_nef.webp", "thumb": "images/moorish-synagogue/07_photo_DSC_0400_nef-sm.webp", "caption": "Close-up"},
+        {"src": "images/moorish-synagogue/02_photo_DSC_0374_nef.webp", "thumb": "images/moorish-synagogue/02_photo_DSC_0374_nef-sm.webp", "caption": "Close-up"},
+        {"src": "images/moorish-synagogue/03_photo_DSC_0509_nef_contexte.webp", "thumb": "images/moorish-synagogue/03_photo_DSC_0509_nef_contexte-sm.webp", "caption": "On display"},
+        {"src": "images/moorish-synagogue/04_photo_DSC_0511_nef_contexte.webp", "thumb": "images/moorish-synagogue/04_photo_DSC_0511_nef_contexte-sm.webp", "caption": "On display"},
+        {"src": "images/moorish-synagogue/05_photo_DSC_0388_nef.webp", "thumb": "images/moorish-synagogue/05_photo_DSC_0388_nef-sm.webp", "caption": "Close-up"},
+        {"src": "images/moorish-synagogue/06_photo_DSC_0376_nef.webp", "thumb": "images/moorish-synagogue/06_photo_DSC_0376_nef-sm.webp", "caption": "Close-up"},
+        {"src": "images/moorish-synagogue/09_rendu_trois_quarts.webp", "thumb": "images/moorish-synagogue/09_rendu_trois_quarts-sm.webp", "caption": "3D render, three-quarter view (unpainted)"},
+        {"src": "images/moorish-synagogue/08_rendu_face.webp", "thumb": "images/moorish-synagogue/08_rendu_face-sm.webp", "caption": "3D render, front view (unpainted)"}
       ],
       "makerworld": "https://makerworld.com/en/models/3665148-moorish-synagogue-framed-bas-relief-diorama",
       "links": [
@@ -95,15 +95,15 @@
         ["Print time", "≈ 5 h 37 min · 37 g · single colour"]
       ],
       "images": [
-        {"src": "https://makerworld.bblmw.com/makerworld/model/US52a2ef0504651b/design/24efb4a3e447eae6.jpg", "caption": "In its frame"},
-        {"src": "https://makerworld.bblmw.com/makerworld/model/US52a2ef0504651b/design/a7dda3b1ae3c6a9e.jpg", "caption": "Close-up"},
-        {"src": "https://makerworld.bblmw.com/makerworld/model/US52a2ef0504651b/design/d268da83814d33dc.jpg", "caption": "On display"},
-        {"src": "https://makerworld.bblmw.com/makerworld/model/US52a2ef0504651b/design/63629d139eb0f308.jpg", "caption": "On display"},
-        {"src": "https://makerworld.bblmw.com/makerworld/model/US52a2ef0504651b/design/6b45d2e099a20516.jpg", "caption": "Close-up"},
-        {"src": "https://makerworld.bblmw.com/makerworld/model/US52a2ef0504651b/design/ca9d151e59b8caf5.jpg", "caption": "Close-up"},
-        {"src": "https://makerworld.bblmw.com/makerworld/model/US52a2ef0504651b/design/ad7fe61e10cdbeda.jpg", "caption": "Close-up"},
-        {"src": "https://makerworld.bblmw.com/makerworld/model/US52a2ef0504651b/design/df0ddb7776ec6eb3.jpg", "caption": "3D render, front view (unpainted)"},
-        {"src": "https://makerworld.bblmw.com/makerworld/model/US52a2ef0504651b/design/4680a40e0e7ea0ef.jpg", "caption": "3D render, three-quarter view (unpainted)"}
+        {"src": "images/norwegian-stave-church/01_photo_DSC_0478_nef_contexte.webp", "thumb": "images/norwegian-stave-church/01_photo_DSC_0478_nef_contexte-sm.webp", "caption": "In its frame"},
+        {"src": "images/norwegian-stave-church/02_photo_DSC_0379_nef.webp", "thumb": "images/norwegian-stave-church/02_photo_DSC_0379_nef-sm.webp", "caption": "Close-up"},
+        {"src": "images/norwegian-stave-church/03_photo_DSC_0505_nef_contexte.webp", "thumb": "images/norwegian-stave-church/03_photo_DSC_0505_nef_contexte-sm.webp", "caption": "On display"},
+        {"src": "images/norwegian-stave-church/04_photo_DSC_0507_nef_contexte.webp", "thumb": "images/norwegian-stave-church/04_photo_DSC_0507_nef_contexte-sm.webp", "caption": "On display"},
+        {"src": "images/norwegian-stave-church/05_photo_DSC_0380_nef.webp", "thumb": "images/norwegian-stave-church/05_photo_DSC_0380_nef-sm.webp", "caption": "Close-up"},
+        {"src": "images/norwegian-stave-church/06_photo_DSC_0402_nef.webp", "thumb": "images/norwegian-stave-church/06_photo_DSC_0402_nef-sm.webp", "caption": "Close-up"},
+        {"src": "images/norwegian-stave-church/07_photo_DSC_0405_nef.webp", "thumb": "images/norwegian-stave-church/07_photo_DSC_0405_nef-sm.webp", "caption": "Close-up"},
+        {"src": "images/norwegian-stave-church/08_rendu_face.webp", "thumb": "images/norwegian-stave-church/08_rendu_face-sm.webp", "caption": "3D render, front view (unpainted)"},
+        {"src": "images/norwegian-stave-church/09_rendu_trois_quarts.webp", "thumb": "images/norwegian-stave-church/09_rendu_trois_quarts-sm.webp", "caption": "3D render, three-quarter view (unpainted)"}
       ],
       "makerworld": "https://makerworld.com/en/models/3665101-norwegian-stave-church-framed-bas-relief-diorama",
       "links": [
@@ -130,14 +130,14 @@
         ["Print time", "≈ 6 h 00 min · 37 g · single colour"]
       ],
       "images": [
-        {"src": "https://makerworld.bblmw.com/makerworld/model/USbede3a2e8fad5d/design/53626a5c80f48af0.jpg", "caption": "In its frame"},
-        {"src": "https://makerworld.bblmw.com/makerworld/model/USbede3a2e8fad5d/design/a7a63b389c49ec99.jpg", "caption": "Close-up"},
-        {"src": "https://makerworld.bblmw.com/makerworld/model/USbede3a2e8fad5d/design/eeb75dd1907f2d2e.jpg", "caption": "On display"},
-        {"src": "https://makerworld.bblmw.com/makerworld/model/USbede3a2e8fad5d/design/23140bc3e0259b22.jpg", "caption": "On display"},
-        {"src": "https://makerworld.bblmw.com/makerworld/model/USbede3a2e8fad5d/design/9379d4dbdb8eae36.jpg", "caption": "Close-up"},
-        {"src": "https://makerworld.bblmw.com/makerworld/model/USbede3a2e8fad5d/design/87351fd70172cc9c.jpg", "caption": "Close-up"},
-        {"src": "https://makerworld.bblmw.com/makerworld/model/USbede3a2e8fad5d/design/1fae999331873ddb.jpg", "caption": "3D render, three-quarter view (unpainted)"},
-        {"src": "https://makerworld.bblmw.com/makerworld/model/USbede3a2e8fad5d/design/85311da02f62f2af.jpg", "caption": "3D render, front view (unpainted)"}
+        {"src": "images/andalusian-mosque/01_photo_DSC_0472_nef_contexte.webp", "thumb": "images/andalusian-mosque/01_photo_DSC_0472_nef_contexte-sm.webp", "caption": "In its frame"},
+        {"src": "images/andalusian-mosque/07_photo_DSC_0409_nef.webp", "thumb": "images/andalusian-mosque/07_photo_DSC_0409_nef-sm.webp", "caption": "Close-up"},
+        {"src": "images/andalusian-mosque/03_photo_DSC_0513_nef_contexte.webp", "thumb": "images/andalusian-mosque/03_photo_DSC_0513_nef_contexte-sm.webp", "caption": "On display"},
+        {"src": "images/andalusian-mosque/04_photo_DSC_0515_nef_contexte.webp", "thumb": "images/andalusian-mosque/04_photo_DSC_0515_nef_contexte-sm.webp", "caption": "On display"},
+        {"src": "images/andalusian-mosque/05_photo_DSC_0390_nef.webp", "thumb": "images/andalusian-mosque/05_photo_DSC_0390_nef-sm.webp", "caption": "Close-up"},
+        {"src": "images/andalusian-mosque/06_photo_DSC_0398_nef.webp", "thumb": "images/andalusian-mosque/06_photo_DSC_0398_nef-sm.webp", "caption": "Close-up"},
+        {"src": "images/andalusian-mosque/09_rendu_trois_quarts.webp", "thumb": "images/andalusian-mosque/09_rendu_trois_quarts-sm.webp", "caption": "3D render, three-quarter view (unpainted)"},
+        {"src": "images/andalusian-mosque/08_rendu_face.webp", "thumb": "images/andalusian-mosque/08_rendu_face-sm.webp", "caption": "3D render, front view (unpainted)"}
       ],
       "makerworld": "https://makerworld.com/en/models/3665069-andalusian-mosque-facade-framed-bas-relief-diorama",
       "links": [
@@ -164,13 +164,13 @@
         ["Print time", "≈ 6 h 53 min · 42 g · single colour"]
       ],
       "images": [
-        {"src": "https://makerworld.bblmw.com/makerworld/model/US438f2473f0fe12/design/7c0963d44114b98f.jpg", "caption": "In its frame"},
-        {"src": "https://makerworld.bblmw.com/makerworld/model/US438f2473f0fe12/design/e0b49d938aadf259.jpg", "caption": "On display"},
-        {"src": "https://makerworld.bblmw.com/makerworld/model/US438f2473f0fe12/design/a96aa664ffcc9f37.jpg", "caption": "Close-up"},
-        {"src": "https://makerworld.bblmw.com/makerworld/model/US438f2473f0fe12/design/ca33bba976494dbc.jpg", "caption": "Close-up"},
-        {"src": "https://makerworld.bblmw.com/makerworld/model/US438f2473f0fe12/design/bbb73afe84fe8dbd.jpg", "caption": "On display"},
-        {"src": "https://makerworld.bblmw.com/makerworld/model/US438f2473f0fe12/design/292b0f2d2878e00f.jpg", "caption": "3D render, three-quarter view (unpainted)"},
-        {"src": "https://makerworld.bblmw.com/makerworld/model/US438f2473f0fe12/design/9bfe992a9211cf1a.jpg", "caption": "3D render, front view (unpainted)"}
+        {"src": "images/gothic-cathedral/01_photo_DSC_0485_nef_contexte.webp", "thumb": "images/gothic-cathedral/01_photo_DSC_0485_nef_contexte-sm.webp", "caption": "In its frame"},
+        {"src": "images/gothic-cathedral/06_photo_DSC_0498_nef_contexte.webp", "thumb": "images/gothic-cathedral/06_photo_DSC_0498_nef_contexte-sm.webp", "caption": "On display"},
+        {"src": "images/gothic-cathedral/07_photo_DSC_0490_nef.webp", "thumb": "images/gothic-cathedral/07_photo_DSC_0490_nef-sm.webp", "caption": "Close-up"},
+        {"src": "images/gothic-cathedral/02_photo_DSC_0489_nef.webp", "thumb": "images/gothic-cathedral/02_photo_DSC_0489_nef-sm.webp", "caption": "Close-up"},
+        {"src": "images/gothic-cathedral/05_photo_DSC_0497_nef_contexte.webp", "thumb": "images/gothic-cathedral/05_photo_DSC_0497_nef_contexte-sm.webp", "caption": "On display"},
+        {"src": "images/gothic-cathedral/09_rendu_trois_quarts.webp", "thumb": "images/gothic-cathedral/09_rendu_trois_quarts-sm.webp", "caption": "3D render, three-quarter view (unpainted)"},
+        {"src": "images/gothic-cathedral/08_rendu_face.webp", "thumb": "images/gothic-cathedral/08_rendu_face-sm.webp", "caption": "3D render, front view (unpainted)"}
       ],
       "makerworld": "https://makerworld.com/en/models/3664967-gothic-cathedral-facade-framed-bas-relief-diorama",
       "links": [
@@ -197,14 +197,14 @@
         ["Print time", "≈ 5 h 23 min · 36 g · single colour"]
       ],
       "images": [
-        {"src": "https://makerworld.bblmw.com/makerworld/model/USa689e9df83e4ea/design/e66922689f2d53f3.jpg", "caption": "In its frame"},
-        {"src": "https://makerworld.bblmw.com/makerworld/model/USa689e9df83e4ea/design/73c6b441d38c8e9a.jpg", "caption": "Close-up"},
-        {"src": "https://makerworld.bblmw.com/makerworld/model/USa689e9df83e4ea/design/591fd37b2dc206fd.jpg", "caption": "On display"},
-        {"src": "https://makerworld.bblmw.com/makerworld/model/USa689e9df83e4ea/design/a134d74ec628320e.jpg", "caption": "On display"},
-        {"src": "https://makerworld.bblmw.com/makerworld/model/USa689e9df83e4ea/design/fa840023c53b57b2.jpg", "caption": "Close-up"},
-        {"src": "https://makerworld.bblmw.com/makerworld/model/USa689e9df83e4ea/design/185d6953cfdd514c.jpg", "caption": "Close-up"},
-        {"src": "https://makerworld.bblmw.com/makerworld/model/USa689e9df83e4ea/design/f18a90996e180718.jpg", "caption": "3D render, three-quarter view (unpainted)"},
-        {"src": "https://makerworld.bblmw.com/makerworld/model/USa689e9df83e4ea/design/f73cbd4cafdb4279.jpg", "caption": "3D render, front view (unpainted)"}
+        {"src": "images/orthodox-church/01_photo_DSC_0476_nef_contexte.webp", "thumb": "images/orthodox-church/01_photo_DSC_0476_nef_contexte-sm.webp", "caption": "In its frame"},
+        {"src": "images/orthodox-church/07_photo_DSC_0401_nef.webp", "thumb": "images/orthodox-church/07_photo_DSC_0401_nef-sm.webp", "caption": "Close-up"},
+        {"src": "images/orthodox-church/03_photo_DSC_0517_nef_contexte.webp", "thumb": "images/orthodox-church/03_photo_DSC_0517_nef_contexte-sm.webp", "caption": "On display"},
+        {"src": "images/orthodox-church/04_photo_DSC_0519_nef_contexte.webp", "thumb": "images/orthodox-church/04_photo_DSC_0519_nef_contexte-sm.webp", "caption": "On display"},
+        {"src": "images/orthodox-church/05_photo_DSC_0383_nef.webp", "thumb": "images/orthodox-church/05_photo_DSC_0383_nef-sm.webp", "caption": "Close-up"},
+        {"src": "images/orthodox-church/06_photo_DSC_0385_nef.webp", "thumb": "images/orthodox-church/06_photo_DSC_0385_nef-sm.webp", "caption": "Close-up"},
+        {"src": "images/orthodox-church/09_rendu_trois_quarts.webp", "thumb": "images/orthodox-church/09_rendu_trois_quarts-sm.webp", "caption": "3D render, three-quarter view (unpainted)"},
+        {"src": "images/orthodox-church/08_rendu_face.webp", "thumb": "images/orthodox-church/08_rendu_face-sm.webp", "caption": "3D render, front view (unpainted)"}
       ],
       "makerworld": "https://makerworld.com/en/models/3665012-orthodox-church-framed-bas-relief-diorama",
       "links": [

@@ -31,6 +31,16 @@
     return src;
   }
 
+  // Small version for cards and thumbnails: the "thumb" file when provided, else a resized CDN image.
+  function pick(img, w) {
+    return w <= 800 && img.thumb ? img.thumb : sized(img.src, w);
+  }
+
+  function srcsetOf(img) {
+    if (img.thumb) return img.thumb + " 800w, " + img.src + " 1600w";
+    return sized(img.src, 640) + " 640w, " + sized(img.src, 960) + " 960w";
+  }
+
   function imagesOf(m) {
     if (Array.isArray(m.images) && m.images.length) {
       return m.images.filter(function (i) { return i && i.src; });
@@ -87,8 +97,8 @@
     var media = el("button", { type: "button", class: "card-media", "aria-label": "View photos and details: " + (m.title || "model") });
     if (imgs.length) {
       var img = el("img", {
-        src: sized(imgs[0].src, 640),
-        srcset: sized(imgs[0].src, 640) + " 640w, " + sized(imgs[0].src, 960) + " 960w",
+        src: pick(imgs[0], 640),
+        srcset: srcsetOf(imgs[0]),
         sizes: "(max-width: 600px) 100vw, 380px",
         alt: altOf(m, imgs[0]), loading: index < 3 ? "eager" : "lazy", decoding: "async", width: "640", height: "480"
       });
@@ -234,7 +244,7 @@
     thumbs.textContent = "";
     imgs.forEach(function (img, k) {
       var b = el("button", { type: "button", "aria-label": "Photo " + (k + 1) + " of " + imgs.length + (img.caption ? ": " + img.caption : "") });
-      b.appendChild(el("img", { src: sized(img.src, 160), alt: "", loading: "lazy", decoding: "async" }));
+      b.appendChild(el("img", { src: pick(img, 160), alt: "", loading: "lazy", decoding: "async" }));
       b.addEventListener("click", function () { show(k); });
       thumbs.appendChild(b);
     });
