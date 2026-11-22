@@ -9,5 +9,209 @@
     {"id": "large", "label": "Large frame"},
     {"id": "bas-relief", "label": "Bas-relief"}
   ],
-  "models": []
+  "models": [
+    {
+      "id": "hindu-temple",
+      "title": "Hindu Temple",
+      "collection": "Sacred Facades",
+      "categories": ["bas-relief"],
+      "description": "A North Indian temple seen through a carved stone gateway.",
+      "details": [
+        "An original design in the Nagara style, not a copy of any real temple. In front, a torana gateway with thick pillars and a garland-shaped arch frames the view. Through it rises the temple: a curved shikhara tower topped by an amalaka and a kalasha finial, two small corner turrets, a stepped porch roof on pillars, a carved frieze and a flight of steps. The sky is carved as scrolling clouds. No figures or symbols are shown.",
+        "Sandstone is the obvious choice: warm ochre and pink with darker washes in the stone courses, and a soft sky behind. The one in the photos is just my take."
+      ],
+      "specs": [
+        ["Relief", "70 × 146 × 15 mm"],
+        ["Framed", "78 × 154 mm in the black large frame, up to 92 × 168 mm in wood moulding"],
+        ["Visible scene", "64 × 140 mm"],
+        ["Printing", "Upright, no supports · 0.08 mm layers · PLA"],
+        ["Print time", "≈ 6 h 07 min · 41 g · single colour"]
+      ],
+      "images": [
+        {"src": "images/hindu-temple/01_photo_DSC_0475_nef_contexte.webp", "thumb": "images/hindu-temple/01_photo_DSC_0475_nef_contexte-sm.webp", "caption": "In its frame"},
+        {"src": "images/hindu-temple/03_photo_DSC_0500_nef_contexte.webp", "thumb": "images/hindu-temple/03_photo_DSC_0500_nef_contexte-sm.webp", "caption": "On display"},
+        {"src": "images/hindu-temple/04_photo_DSC_0503_nef_contexte.webp", "thumb": "images/hindu-temple/04_photo_DSC_0503_nef_contexte-sm.webp", "caption": "On display"},
+        {"src": "images/hindu-temple/07_photo_DSC_0371_nef.webp", "thumb": "images/hindu-temple/07_photo_DSC_0371_nef-sm.webp", "caption": "Close-up"},
+        {"src": "images/hindu-temple/09_rendu_trois_quarts.webp", "thumb": "images/hindu-temple/09_rendu_trois_quarts-sm.webp", "caption": "3D render, three-quarter view (unpainted)"},
+        {"src": "images/hindu-temple/08_rendu_face.webp", "thumb": "images/hindu-temple/08_rendu_face-sm.webp", "caption": "3D render, front view (unpainted)"}
+      ],
+      "makerworld": "https://makerworld.com/en/models/3665188-hindu-temple-framed-bas-relief-diorama",
+      "links": [
+        {"label": "Frame & stand (separate free model)", "url": "https://makerworld.com/en/models/3664626-frames-for-bas-relief-dioramas"}
+      ],
+      "tags": ["Hindu temple", "Nagara style"],
+      "date": "2026-11-22"
+    },
+    {
+      "id": "moorish-synagogue",
+      "title": "Moorish Synagogue",
+      "collection": "Sacred Facades",
+      "categories": ["bas-relief"],
+      "description": "Domes, horseshoe arches and a dawn sky, in a frame.",
+      "details": [
+        "This one follows the Moorish Revival style of 19th-century European synagogues, without copying any real building. A giant brick horseshoe arch takes up most of the facade. Inside it, a polylobed portal with wooden doors, and above the door the two rounded Tablets of the Law, left plain so you can add lettering or not. Twin horseshoe windows, a rose window, two slim octagonal towers with ribbed domes and a big central dome complete it, against a dawn sky in low relief.",
+        "Brick, stone, copper and wood all have their own texture. Red brick with pale stone trim, green-patina domes and a pink-orange sky work really well. The one in the photos is just my take."
+      ],
+      "specs": [
+        ["Relief", "70 × 146 × 15 mm"],
+        ["Framed", "78 × 154 mm in the black large frame, up to 92 × 168 mm in wood moulding"],
+        ["Visible scene", "64 × 140 mm"],
+        ["Printing", "Upright, no supports · 0.08 mm layers · PLA"],
+        ["Print time", "≈ 6 h 02 min · 39 g · single colour"]
+      ],
+      "images": [
+        {"src": "images/moorish-synagogue/01_photo_DSC_0473_nef_contexte.webp", "thumb": "images/moorish-synagogue/01_photo_DSC_0473_nef_contexte-sm.webp", "caption": "In its frame"},
+        {"src": "images/moorish-synagogue/07_photo_DSC_0400_nef.webp", "thumb": "images/moorish-synagogue/07_photo_DSC_0400_nef-sm.webp", "caption": "Close-up"},
+        {"src": "images/moorish-synagogue/02_photo_DSC_0374_nef.webp", "thumb": "images/moorish-synagogue/02_photo_DSC_0374_nef-sm.webp", "caption": "Close-up"},
+        {"src": "images/moorish-synagogue/03_photo_DSC_0509_nef_contexte.webp", "thumb": "images/moorish-synagogue/03_photo_DSC_0509_nef_contexte-sm.webp", "caption": "On display"},
+        {"src": "images/moorish-synagogue/04_photo_DSC_0511_nef_contexte.webp", "thumb": "images/moorish-synagogue/04_photo_DSC_0511_nef_contexte-sm.webp", "caption": "On display"},
+        {"src": "images/moorish-synagogue/05_photo_DSC_0388_nef.webp", "thumb": "images/moorish-synagogue/05_photo_DSC_0388_nef-sm.webp", "caption": "Close-up"},
+        {"src": "images/moorish-synagogue/06_photo_DSC_0376_nef.webp", "thumb": "images/moorish-synagogue/06_photo_DSC_0376_nef-sm.webp", "caption": "Close-up"},
+        {"src": "images/moorish-synagogue/09_rendu_trois_quarts.webp", "thumb": "images/moorish-synagogue/09_rendu_trois_quarts-sm.webp", "caption": "3D render, three-quarter view (unpainted)"},
+        {"src": "images/moorish-synagogue/08_rendu_face.webp", "thumb": "images/moorish-synagogue/08_rendu_face-sm.webp", "caption": "3D render, front view (unpainted)"}
+      ],
+      "makerworld": "https://makerworld.com/en/models/3665148-moorish-synagogue-framed-bas-relief-diorama",
+      "links": [
+        {"label": "Frame & stand (separate free model)", "url": "https://makerworld.com/en/models/3664626-frames-for-bas-relief-dioramas"}
+      ],
+      "tags": ["Synagogue", "Moorish Revival"],
+      "date": "2026-11-22"
+    },
+    {
+      "id": "norwegian-stave-church",
+      "title": "Norwegian Stave Church",
+      "collection": "Sacred Facades",
+      "categories": ["bas-relief"],
+      "description": "A little piece of medieval Norway for your painting desk.",
+      "details": [
+        "This is an original stave church in bas-relief. It's inspired by the old wooden churches of Norway, but it isn't a copy of any real one. Shingled roofs stack up in tiers to a tiny belfry and spire, with dragon heads at the gable ends. Down below, a covered gallery runs along a fieldstone base, and a gabled porch shelters a tall arched door with iron straps. Fir trees and mountain slopes fill in the background.",
+        "It's made for painting. Wood grain on the walls, shingles on every roof, rough stone at the base: a quick drybrush brings all of it out. Go warm timber, grey weathered wood, or dark and moody with snow on the roofs. The one in the photos is just my take."
+      ],
+      "specs": [
+        ["Relief", "70 × 146 × 15 mm"],
+        ["Framed", "78 × 154 mm in the black large frame, up to 92 × 168 mm in wood moulding"],
+        ["Visible scene", "64 × 140 mm"],
+        ["Printing", "Upright, no supports · 0.08 mm layers · PLA"],
+        ["Print time", "≈ 5 h 37 min · 37 g · single colour"]
+      ],
+      "images": [
+        {"src": "images/norwegian-stave-church/01_photo_DSC_0478_nef_contexte.webp", "thumb": "images/norwegian-stave-church/01_photo_DSC_0478_nef_contexte-sm.webp", "caption": "In its frame"},
+        {"src": "images/norwegian-stave-church/02_photo_DSC_0379_nef.webp", "thumb": "images/norwegian-stave-church/02_photo_DSC_0379_nef-sm.webp", "caption": "Close-up"},
+        {"src": "images/norwegian-stave-church/03_photo_DSC_0505_nef_contexte.webp", "thumb": "images/norwegian-stave-church/03_photo_DSC_0505_nef_contexte-sm.webp", "caption": "On display"},
+        {"src": "images/norwegian-stave-church/04_photo_DSC_0507_nef_contexte.webp", "thumb": "images/norwegian-stave-church/04_photo_DSC_0507_nef_contexte-sm.webp", "caption": "On display"},
+        {"src": "images/norwegian-stave-church/05_photo_DSC_0380_nef.webp", "thumb": "images/norwegian-stave-church/05_photo_DSC_0380_nef-sm.webp", "caption": "Close-up"},
+        {"src": "images/norwegian-stave-church/06_photo_DSC_0402_nef.webp", "thumb": "images/norwegian-stave-church/06_photo_DSC_0402_nef-sm.webp", "caption": "Close-up"},
+        {"src": "images/norwegian-stave-church/07_photo_DSC_0405_nef.webp", "thumb": "images/norwegian-stave-church/07_photo_DSC_0405_nef-sm.webp", "caption": "Close-up"},
+        {"src": "images/norwegian-stave-church/08_rendu_face.webp", "thumb": "images/norwegian-stave-church/08_rendu_face-sm.webp", "caption": "3D render, front view (unpainted)"},
+        {"src": "images/norwegian-stave-church/09_rendu_trois_quarts.webp", "thumb": "images/norwegian-stave-church/09_rendu_trois_quarts-sm.webp", "caption": "3D render, three-quarter view (unpainted)"}
+      ],
+      "makerworld": "https://makerworld.com/en/models/3665101-norwegian-stave-church-framed-bas-relief-diorama",
+      "links": [
+        {"label": "Frame & stand (separate free model)", "url": "https://makerworld.com/en/models/3664626-frames-for-bas-relief-dioramas"}
+      ],
+      "tags": ["Stave church", "Scandinavian"],
+      "date": "2026-11-22"
+    },
+    {
+      "id": "andalusian-mosque",
+      "title": "Andalusian Mosque Facade",
+      "collection": "Sacred Facades",
+      "categories": ["bas-relief"],
+      "description": "A moonlit corner of Al-Andalus for your desk.",
+      "details": [
+        "An original design in the Andalusian-Maghrebi style, not a copy of any real building. A horseshoe-arch portal sits inside its rectangular alfiz moulding, with studded double doors, twisted columns, latticed side windows, a tiled canopy, a carved star frieze and a minaret on the central axis. In front, a polylobed arch opens onto a night sky with a crescent moon and eight-pointed stars.",
+        "Stone, plaster, wood and tiles each have their own texture, so it's a treat to paint. Try warm sandstone and white plaster, green or blue tiles, and a deep night sky with gold stars. The one in the photos is just my take."
+      ],
+      "specs": [
+        ["Relief", "70 × 146 × 15 mm"],
+        ["Framed", "78 × 154 mm in the black large frame, up to 92 × 168 mm in wood moulding"],
+        ["Visible scene", "64 × 140 mm"],
+        ["Printing", "Upright, no supports · 0.08 mm layers · PLA"],
+        ["Print time", "≈ 6 h 00 min · 37 g · single colour"]
+      ],
+      "images": [
+        {"src": "images/andalusian-mosque/01_photo_DSC_0472_nef_contexte.webp", "thumb": "images/andalusian-mosque/01_photo_DSC_0472_nef_contexte-sm.webp", "caption": "In its frame"},
+        {"src": "images/andalusian-mosque/07_photo_DSC_0409_nef.webp", "thumb": "images/andalusian-mosque/07_photo_DSC_0409_nef-sm.webp", "caption": "Close-up"},
+        {"src": "images/andalusian-mosque/03_photo_DSC_0513_nef_contexte.webp", "thumb": "images/andalusian-mosque/03_photo_DSC_0513_nef_contexte-sm.webp", "caption": "On display"},
+        {"src": "images/andalusian-mosque/04_photo_DSC_0515_nef_contexte.webp", "thumb": "images/andalusian-mosque/04_photo_DSC_0515_nef_contexte-sm.webp", "caption": "On display"},
+        {"src": "images/andalusian-mosque/05_photo_DSC_0390_nef.webp", "thumb": "images/andalusian-mosque/05_photo_DSC_0390_nef-sm.webp", "caption": "Close-up"},
+        {"src": "images/andalusian-mosque/06_photo_DSC_0398_nef.webp", "thumb": "images/andalusian-mosque/06_photo_DSC_0398_nef-sm.webp", "caption": "Close-up"},
+        {"src": "images/andalusian-mosque/09_rendu_trois_quarts.webp", "thumb": "images/andalusian-mosque/09_rendu_trois_quarts-sm.webp", "caption": "3D render, three-quarter view (unpainted)"},
+        {"src": "images/andalusian-mosque/08_rendu_face.webp", "thumb": "images/andalusian-mosque/08_rendu_face-sm.webp", "caption": "3D render, front view (unpainted)"}
+      ],
+      "makerworld": "https://makerworld.com/en/models/3665069-andalusian-mosque-facade-framed-bas-relief-diorama",
+      "links": [
+        {"label": "Frame & stand (separate free model)", "url": "https://makerworld.com/en/models/3664626-frames-for-bas-relief-dioramas"}
+      ],
+      "tags": ["Mosque", "Andalusian"],
+      "date": "2026-11-22"
+    },
+    {
+      "id": "gothic-cathedral",
+      "title": "Gothic Cathedral Facade",
+      "collection": "Sacred Facades",
+      "categories": ["bas-relief"],
+      "description": "A whole Gothic cathedral front, shrunk down to fit on your shelf.",
+      "details": [
+        "Rose window, three tall lancet windows with tracery, pinnacled buttresses and a crocketed gable with a cross, all under a steep slate roof. At the bottom, a pointed-arch portal with clustered colonnettes frames the wooden doors. The tympanum above the door is inspired by the Dormition relief of Strasbourg Cathedral, a medieval sculpture in the public domain. Every wall is dressed stone, block by block.",
+        "Lots to play with for painters: pale limestone with dark washes in the joints, a slate-grey roof, warm wooden doors, and that rose window just begging for a bit of colour. The one in the photos is just my take."
+      ],
+      "specs": [
+        ["Relief", "70 × 146 × 15 mm"],
+        ["Framed", "78 × 154 mm in the black large frame, up to 92 × 168 mm in wood moulding"],
+        ["Visible scene", "64 × 140 mm"],
+        ["Printing", "Upright, no supports · 0.08 mm layers · PLA"],
+        ["Print time", "≈ 6 h 53 min · 42 g · single colour"]
+      ],
+      "images": [
+        {"src": "images/gothic-cathedral/01_photo_DSC_0485_nef_contexte.webp", "thumb": "images/gothic-cathedral/01_photo_DSC_0485_nef_contexte-sm.webp", "caption": "In its frame"},
+        {"src": "images/gothic-cathedral/06_photo_DSC_0498_nef_contexte.webp", "thumb": "images/gothic-cathedral/06_photo_DSC_0498_nef_contexte-sm.webp", "caption": "On display"},
+        {"src": "images/gothic-cathedral/07_photo_DSC_0490_nef.webp", "thumb": "images/gothic-cathedral/07_photo_DSC_0490_nef-sm.webp", "caption": "Close-up"},
+        {"src": "images/gothic-cathedral/02_photo_DSC_0489_nef.webp", "thumb": "images/gothic-cathedral/02_photo_DSC_0489_nef-sm.webp", "caption": "Close-up"},
+        {"src": "images/gothic-cathedral/05_photo_DSC_0497_nef_contexte.webp", "thumb": "images/gothic-cathedral/05_photo_DSC_0497_nef_contexte-sm.webp", "caption": "On display"},
+        {"src": "images/gothic-cathedral/09_rendu_trois_quarts.webp", "thumb": "images/gothic-cathedral/09_rendu_trois_quarts-sm.webp", "caption": "3D render, three-quarter view (unpainted)"},
+        {"src": "images/gothic-cathedral/08_rendu_face.webp", "thumb": "images/gothic-cathedral/08_rendu_face-sm.webp", "caption": "3D render, front view (unpainted)"}
+      ],
+      "makerworld": "https://makerworld.com/en/models/3664967-gothic-cathedral-facade-framed-bas-relief-diorama",
+      "links": [
+        {"label": "Frame & stand (separate free model)", "url": "https://makerworld.com/en/models/3664626-frames-for-bas-relief-dioramas"}
+      ],
+      "tags": ["Cathedral", "Gothic"],
+      "date": "2026-11-22"
+    },
+    {
+      "id": "orthodox-church",
+      "title": "Orthodox Church",
+      "collection": "Sacred Facades",
+      "categories": ["bas-relief"],
+      "description": "Onion domes under a winter sky, ready for your brushes.",
+      "details": [
+        "An original church in the Russian Orthodox style, not any real one. A big onion dome on a tall drum crowns the centre, with two slim bell towers on each side, open belfries, little tented roofs and their own domes, each topped by a three-bar cross. Below, tiers of kokoshnik gables step up towards the dome, and a stepped arched portal opens the porch. The domes are covered in scale shingles, and behind them sits a winter sky with flat stylised clouds and small stars.",
+        "This one is all about the domes: gold, blue with gold stars, green, or a mix. White walls and a cold blue sky make them pop. The one in the photos is just my take."
+      ],
+      "specs": [
+        ["Relief", "70 × 146 × 15 mm"],
+        ["Framed", "78 × 154 mm in the black large frame, up to 92 × 168 mm in wood moulding"],
+        ["Visible scene", "64 × 140 mm"],
+        ["Printing", "Upright, no supports · 0.08 mm layers · PLA"],
+        ["Print time", "≈ 5 h 23 min · 36 g · single colour"]
+      ],
+      "images": [
+        {"src": "images/orthodox-church/01_photo_DSC_0476_nef_contexte.webp", "thumb": "images/orthodox-church/01_photo_DSC_0476_nef_contexte-sm.webp", "caption": "In its frame"},
+        {"src": "images/orthodox-church/07_photo_DSC_0401_nef.webp", "thumb": "images/orthodox-church/07_photo_DSC_0401_nef-sm.webp", "caption": "Close-up"},
+        {"src": "images/orthodox-church/03_photo_DSC_0517_nef_contexte.webp", "thumb": "images/orthodox-church/03_photo_DSC_0517_nef_contexte-sm.webp", "caption": "On display"},
+        {"src": "images/orthodox-church/04_photo_DSC_0519_nef_contexte.webp", "thumb": "images/orthodox-church/04_photo_DSC_0519_nef_contexte-sm.webp", "caption": "On display"},
+        {"src": "images/orthodox-church/05_photo_DSC_0383_nef.webp", "thumb": "images/orthodox-church/05_photo_DSC_0383_nef-sm.webp", "caption": "Close-up"},
+        {"src": "images/orthodox-church/06_photo_DSC_0385_nef.webp", "thumb": "images/orthodox-church/06_photo_DSC_0385_nef-sm.webp", "caption": "Close-up"},
+        {"src": "images/orthodox-church/09_rendu_trois_quarts.webp", "thumb": "images/orthodox-church/09_rendu_trois_quarts-sm.webp", "caption": "3D render, three-quarter view (unpainted)"},
+        {"src": "images/orthodox-church/08_rendu_face.webp", "thumb": "images/orthodox-church/08_rendu_face-sm.webp", "caption": "3D render, front view (unpainted)"}
+      ],
+      "makerworld": "https://makerworld.com/en/models/3665012-orthodox-church-framed-bas-relief-diorama",
+      "links": [
+        {"label": "Frame & stand (separate free model)", "url": "https://makerworld.com/en/models/3664626-frames-for-bas-relief-dioramas"}
+      ],
+      "tags": ["Orthodox church", "Onion domes"],
+      "date": "2026-11-22"
+    }
+  ]
 }

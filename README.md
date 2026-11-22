@@ -11,29 +11,52 @@ models.json    ← le seul fichier à modifier au quotidien
 images/        photos des modèles
 assets/        logo, favicon, image de partage, police
 check.py       vérification avant publication
+tools/         préparation des photos (photos.py)
 ```
 
-## Ajouter un modèle (2 min)
+## Ajouter un modèle
 
-1. Mets la photo dans `images/` : **carrée, 1200 × 1200 px, JPG, moins de 300 Ko**.
-2. Ajoute un bloc dans `models.json` :
+Chaque modèle est un bloc dans `models.json`. Sur le site, il donne une carte (photo de couverture,
+nombre de photos) ; un clic ouvre la fiche : galerie de toutes les photos (flèches, clavier, glissé
+sur mobile, miniatures), description, caractéristiques et liens.
 
 ```json
 {
-  "title": "Nom du modèle",
-  "categories": ["medium"],
-  "description": "Une ou deux phrases.",
-  "image": "images/nom-du-modele.jpg",
-  "alt": "Description de la photo (accessibilité)",
-  "makerworld": "https://makerworld.com/en/models/123456",
+  "id": "gothic-cathedral",
+  "title": "Gothic Cathedral Facade",
+  "collection": "Sacred Facades",
+  "categories": ["bas-relief"],
+  "description": "Une phrase d'accroche (affichée sur la carte).",
+  "details": ["Premier paragraphe de la fiche.", "Deuxième paragraphe."],
+  "specs": [
+    ["Relief", "70 × 146 × 15 mm"],
+    ["Print time", "≈ 6 h 53 min · 42 g · single colour"]
+  ],
+  "images": [
+    {"src": "images/gothic-cathedral/01-cover.webp", "thumb": "images/gothic-cathedral/01-cover-sm.webp", "caption": "In its frame"},
+    {"src": "images/gothic-cathedral/02-detail.webp", "caption": "Close-up"}
+  ],
+  "makerworld": "https://makerworld.com/en/models/3664967-…",
   "instagram": "https://www.instagram.com/p/ABC123/",
-  "tags": ["Gothique", "15 × 15 cm"],
-  "date": "2026-12-01"
+  "links": [{"label": "Frame & stand (separate free model)", "url": "https://makerworld.com/en/models/…"}],
+  "tags": ["Cathedral", "Gothic"],
+  "date": "2026-11-22"
 }
 ```
 
-`title`, `image` et `makerworld` sont obligatoires. Le reste est optionnel :
-sans `instagram`, le bouton n'apparaît pas. Les modèles sont triés du plus récent au plus ancien d'après `date`.
+- **Obligatoires** : `title`, `images` (au moins une) et `makerworld`. Tout le reste est optionnel :
+  un champ absent n'est simplement pas affiché.
+- **`id`** : en minuscules, avec des tirets. Il sert au lien direct vers la fiche,
+  par exemple `https://framedworlds.com/?model=gothic-cathedral` (pratique pour un post Instagram).
+- **Photos** : la première sert de couverture (format 4:3 conseillé). Elles sont hébergées sur le site,
+  dans **`images/<id>/`**, en deux tailles : `src` (1600 px, ~150 Ko) pour la galerie et `thumb`
+  (800 px, ~40 Ko) pour les cartes et les miniatures. `thumb` est facultatif.
+  Une adresse de photo MakerWorld fonctionne aussi : le site en demande alors une version allégée.
+- **Préparer les photos d'un nouveau modèle** : `python tools/photos.py <dossier_des_photos> <id>`
+  crée les deux tailles dans `images/<id>/` et affiche le bloc `"images"` à coller dans `models.json`
+  (le premier fichier par ordre alphabétique sert de couverture ; ajuste les légendes si besoin).
+- `caption` : la légende affichée sous la photo dans la galerie.
+- Les modèles sont triés du plus récent au plus ancien d'après `date` ; à date égale, l'ordre du fichier est conservé.
 
 ## Catégories (filtres)
 
@@ -49,23 +72,19 @@ Elles sont définies une seule fois en haut de `models.json`, et les filtres s'a
 ```
 
 - `id` : en minuscules, sans espace (c'est ce que tu mets dans `"categories"` de chaque modèle).
-- `label` : le texte affiché sur le site, modifiable librement (par exemple `"Small frame (≤ 10 cm)"`).
-- Un modèle peut avoir plusieurs catégories, par exemple `["medium", "bas-relief"]`.
-- Une catégorie qui n'a encore aucun modèle est masquée automatiquement.
-- Chaque filtre a son propre lien, par exemple `https://ton-domaine/?category=bas-relief`,
-  pratique pour une story ou un post Instagram.
+- `label` : le texte affiché sur le site, modifiable librement.
+- Un modèle peut avoir plusieurs catégories, par exemple `["large", "bas-relief"]`.
+- Une catégorie sans modèle est masquée, et la barre de filtres n'apparaît qu'à partir de
+  **deux catégories utilisées**.
+- Chaque filtre a son propre lien, par exemple `https://framedworlds.com/?category=bas-relief`.
 
-3. Lance `python check.py`. Il signale le JSON cassé (virgule en trop),
-   les images manquantes ou trop lourdes et les liens d'exemple oubliés.
+## Vérifier avant de publier
 
-## Avant la première mise en ligne
+Lance `python check.py`. Il signale le JSON cassé (virgule en trop), les champs obligatoires
+manquants, les `id` en double, les photos introuvables ou trop lourdes et les liens mal formés.
 
-- `models.json` : remplace `YOUR_HANDLE` par tes pseudos MakerWorld et Instagram,
-  et remplace les 3 modèles d'exemple ainsi que les images `images/example-*.jpg`.
-- `index.html` : remplace `YOUR-DOMAIN` (3 lignes en haut). Ces lignes donnent l'aperçu
-  du lien quand tu le partages (Instagram, Discord…).
-- La langue du site est l'anglais (public international sur MakerWorld). Pour passer en français,
-  il suffit de modifier les textes dans `index.html` et les 3 libellés de boutons dans `app.js`.
+La langue du site est l'anglais (public international sur MakerWorld). Pour passer en français,
+il suffit de modifier les textes dans `index.html` et les libellés de boutons dans `app.js`.
 
 ## Aperçu en local
 
