@@ -62,7 +62,7 @@ for i, m in enumerate(models, 1):
             errors.append(f"{tag} : champ « {req} » manquant")
     mid = m.get("id")
     if not mid:
-        warnings.append(f"{tag} : pas d'« id », le lien direct ?model=… ne sera pas possible")
+        warnings.append(f"{tag} : pas d'« id », ni page dédiée ni lien direct ?model=…")
     elif not re.fullmatch(r"[a-z0-9-]+", mid):
         errors.append(f"{tag} : id « {mid} » en minuscules, chiffres et tirets uniquement")
     elif mid in seen_ids:
@@ -128,6 +128,34 @@ for i, m in enumerate(models, 1):
 with open(os.path.join(ROOT, "index.html"), encoding="utf-8") as f:
     if "YOUR-DOMAIN" in f.read():
         warnings.append("index.html : remplace YOUR-DOMAIN par ton domaine (aperçu des liens partagés)")
+
+# pages modèles + sitemap : doivent correspondre exactement à models.json
+if not errors:
+    sys.dont_write_bytecode = True
+    sys.path.insert(0, os.path.join(ROOT, "tools"))
+    import build_pages
+    built_models, files = build_pages.build(data)
+    stale_files = []
+    for rel, content in files.items():
+        path = os.path.join(ROOT, rel)
+        try:
+            with open(path, encoding="utf-8") as f:
+                same = f.read() == content
+        except FileNotFoundError:
+            same = False
+        if not same:
+            stale_files.append(rel)
+    if stale_files:
+        errors.append("pages pas à jour (" + ", ".join(stale_files[:3]) + ("…" if len(stale_files) > 3 else "")
+                      + ") : lance  python tools/build_pages.py")
+    for m in built_models:
+        og = build_pages.og_path(m)
+        if og and not os.path.isfile(os.path.join(ROOT, og)):
+            errors.append(f"image de partage manquante ({og}) : lance  python tools/build_pages.py")
+    pages_dir = os.path.join(ROOT, "models")
+    if os.path.isdir(pages_dir):
+        for d in sorted(set(os.listdir(pages_dir)) - {m["id"] for m in built_models}):
+            warnings.append(f"models/{d}/ ne correspond plus à aucun modèle : supprime ce dossier")
 
 for w in warnings:
     print("ATTENTION ", w)
